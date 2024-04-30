@@ -1,0 +1,12 @@
+Rails.application.routes.draw do
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+  # Defines the root path route ("/")
+  # root "articles#index"
+
+  # HTTPメソッド 'URIパターン', to: 'コントローラー名#アクション名'
+  get 'posts', to: 'posts#index'
+  get 'posts/new', to: 'posts#new'
+  post 'posts', to: 'posts#create'
+
+end
